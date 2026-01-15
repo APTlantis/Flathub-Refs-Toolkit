@@ -5,6 +5,6 @@
 /*.egg-info/
 __pycache__/
 
-/flatpaks/
+/flatpak_refs/
 plan.md
 

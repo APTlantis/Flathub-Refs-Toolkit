@@ -11,6 +11,12 @@ Dynamic: license-file
 
 # Flathub Refs Toolkit
 
+[![PyCharm](https://img.shields.io/badge/PyCharm-000?logo=pycharm&logoColor=fff)](#)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=fff)](#)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff)](#)
+[![PyPI](https://img.shields.io/badge/PyPI-3775A9?logo=pypi&logoColor=fff)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Generate category-based Flatpak ref lists from Flathub AppStream metadata and download the matching `.flatpakref` descriptors. The toolkit now ships as an installable package that exposes a single `fhtoolkit` command with dedicated `dump` and `download` subcommands.
 
 ## Features
@@ -63,10 +69,10 @@ fhtoolkit dump -c Graphics --arch aarch64 --branch stable --out refs-aarch64
 ### Download `.flatpakref` descriptors
 ```bash
 # From a single refs file
-fhtoolkit download --refs-file refs/WebBrowser.refs --out flatpakrefs
+fhtoolkit download --refs-file refs/WebBrowser.refs --out flatpaks
 
 # From every refs file in a directory
-fhtoolkit download --refs-dir refs --out flatpakrefs
+fhtoolkit download --refs-dir "refs_lists" --out "flatpaks"
 
 # Combine explicit refs files
 fhtoolkit download -f refs/WebBrowser.refs -f refs/Development.refs --out flatpakrefs

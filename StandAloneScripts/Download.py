@@ -1,4 +1,7 @@
-
+#  [MermaidChart: bdf54bf9-8ea4-4dc6-8f7e-4b01a3240d66]
+#  [MermaidChart: bdf54bf9-8ea4-4dc6-8f7e-4b01a3240d66]
+#  [MermaidChart: bdf54bf9-8ea4-4dc6-8f7e-4b01a3240d66]
+#  [MermaidChart: bdf54bf9-8ea4-4dc6-8f7e-4b01a3240d66]
 """
 Download .flatpakref files for apps listed in one or more .refs files produced by Query.py.
 

@@ -40,7 +40,7 @@ docker run --rm -v "$PWD\refs:/refs" fhtoolkit dump --all --out /refs
 ### Dump refs from AppStream
 ```bash
 # Print category counts
-fhtoolkit dump --dump-categories
+fhtoolkit dump --dump-categories -- out ref_lists
 
 # Generate refs for two categories into refs/
 fhtoolkit dump -c WebBrowser -c Development --out refs
@@ -58,10 +58,10 @@ fhtoolkit dump -c Graphics --arch aarch64 --branch stable --out refs-aarch64
 ### Download `.flatpakref` descriptors
 ```bash
 # From a single refs file
-fhtoolkit download --refs-file refs/WebBrowser.refs --out flatpakrefs
+fhtoolkit download --refs-file refs/WebBrowser.refs --out flatpak_refs
 
 # From every refs file in a directory
-fhtoolkit download --refs-dir refs --out flatpakrefs
+fhtoolkit download --refs-dir "refs_lists" --out "flatpaks"
 
 # Combine explicit refs files
 fhtoolkit download -f refs/WebBrowser.refs -f refs/Development.refs --out flatpakrefs
