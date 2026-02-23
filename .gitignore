@@ -7,4 +7,5 @@ __pycache__/
 
 /flatpak_refs/
 plan.md
-
+/src/fhtoolkit/__pycache__
+/src/fhtoolkit.egg-info/
