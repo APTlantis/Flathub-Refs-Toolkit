@@ -4,6 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=fff)](#)
 [![PyPI](https://img.shields.io/badge/PyPI-3775A9?logo=pypi&logoColor=fff)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=APTlantis_Flathub-Refs-Toolkit&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=APTlantis_Flathub-Refs-Toolkit)
 
 Generate category-based Flatpak ref lists from Flathub AppStream metadata and download the matching `.flatpakref` descriptors. The toolkit now ships as an installable package that exposes a single `fhtoolkit` command with dedicated `dump` and `download` subcommands.
 
