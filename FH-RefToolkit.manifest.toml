@@ -1,0 +1,95 @@
+[manifest]
+schema = "APTlantis Entity Manifest"
+schema_version = "2.4"
+manifest_type = "project"
+canonical_name = "FH-RefToolkit.manifest.toml"
+last_updated = "2026-07-08"
+maintainer = "Herb"
+
+[entity]
+id = "fh-reftoolkit"
+title = "FH-RefToolkit"
+kind = "project"
+class = "project"
+status = "paused"
+description = "Flathub reference toolkit with a Python package and standalone scripts."
+tags = []
+
+[project]
+type = "command-tool-group"
+portfolio_class = "project"
+stage = "production"
+version = "1.0.0"
+
+[governance]
+primary_standard = "CTS"
+primary_standard_path = "D:\\.library\\aptlantis_core\\CTS\\README.md"
+additional_standards = [
+    "WGS",
+    "PPS",
+]
+additional_standard_paths = [
+    "D:\\.library\\aptlantis_core\\WGS\\README.md",
+    "D:\\.library\\aptlantis_core\\PPS\\README.md",
+]
+inherits_from = "..\\CTS.manifest.toml"
+
+[lifecycle]
+state = "paused"
+last_reviewed = "2026-07-08"
+maintainer = "Herb"
+
+[paths]
+root = "D:\\CTS\\FH-RefToolkit"
+
+[documentation]
+project_readme = "Project-README.md"
+readme = "README.md"
+
+[relationships]
+parent = "D:\\CTS"
+child_projects = []
+
+[state]
+stability = "stable"
+active_development = false
+known_gaps = [
+    "Current build, test, artifact, and release posture were not executed during the governance migration.",
+]
+
+[migration]
+archived_manifests = [
+    "D:\\.city_hall\\WGS\\migration-notes\\Legacy-Live-Manifests-20260708\\CTS\\FH-RefToolkit\\FH-RefToolkit.manifest.toml",
+    "D:\\.city_hall\\WGS\\migration-notes\\Legacy-Live-Manifests-20260708\\CTS\\FH-RefToolkit\\FlathubRefs.manifest.toml",
+]
+
+[agent]
+read_first = [
+    "AGENTS.md",
+    "FH-RefToolkit.manifest.toml",
+    "Project-README.md",
+]
+authoritative_docs = [
+    "FH-RefToolkit.manifest.toml",
+    "Project-README.md",
+    "AGENTS.md",
+]
+safe_to_modify = true
+notes = "Existing code and artifacts outrank inferred placeholder state; verify before updating lifecycle claims."
+
+[structure]
+required_files = []
+required_child_project_files = [
+    "AGENTS.md",
+    "[EntityName].manifest.toml",
+    "Project-README.md",
+]
+
+[verification]
+level = "metadata-reconciled"
+evidence = "pyproject.toml, README.md, and FlathubRefs legacy manifest"
+reviewed = "2026-07-08"
+build_verified = false
+tests_verified = false
+artifact_verified = false
+release_verified = false
